@@ -136,70 +136,11 @@ nav{
   width:100%;
   line-height:0;
 }
-/* Mobile: show image */
+/* Hero image: full width, auto height on all devices */
 .hero-img{
   display:block;
   width:100%;
-  height:220px;
-  object-fit:cover;
-  object-position:center center;
-}
-.hero-text-overlay{
-  border-top:4px solid #22c55e;
-  background:#fff;
-  padding:1.75rem 1.25rem 1.25rem;
-  line-height:normal;
-  position:static;
-}
-.hero-tagline-wrap{
-  display:flex;align-items:center;gap:.6rem;
-  margin-bottom:.75rem;
-}
-.hero-tagline-line{
-  width:22px;height:2px;background:#16a34a;flex-shrink:0;border-radius:2px;
-}
-.hero-tagline{
-  font-size:.85rem;font-weight:700;color:#16a34a;letter-spacing:.02em;
-}
-.hero-main-copy{
-  font-family:'Noto Serif JP','Yu Mincho','Georgia',serif;
-  font-size:1.5rem;
-  font-weight:900;
-  color:#111;
-  line-height:1.4;
-  margin-bottom:.75rem;
-}
-.hero-sub-copy{
-  font-size:.9rem;
-  color:#374151;
-  line-height:1.85;
-}
-/* Desktop: full image with text overlay on left white area */
-@media(min-width:640px){
-  .hero-img{
-    display:block;
-    width:100%;
-    height:auto;
-    object-position:center;
-  }
-  .hero-text-overlay{
-    position:absolute;
-    top:34%;
-    left:4%;
-    width:42%;
-    background:transparent;
-    border-top:none;
-    padding:0;
-  }
-  .hero-tagline-line{width:28px;}
-  .hero-tagline{font-size:.95rem;color:#16a34a;}
-  .hero-main-copy{font-size:clamp(1.2rem,2.3vw,1.75rem);color:#1a1a1a;}
-  .hero-sub-copy{font-size:clamp(.82rem,1.1vw,.92rem);color:#374151;}
-}
-@media(min-width:1100px){
-  .hero-text-overlay{left:5%;width:40%;top:36%;}
-  .hero-main-copy{font-size:1.75rem;}
-  .hero-tagline{font-size:1rem;}
+  height:auto;
 }
 /* White action band below hero image */
 .hero-action-wrap{
@@ -597,14 +538,6 @@ footer{border-top:1px solid var(--border);padding:2rem 20px;text-align:center;fo
 <section id="hero">
   <div class="hero-image-wrap">
     <img src="hero.png" alt="AI Stage - AI活用の実践者が集うコミュニティ" class="hero-img" />
-    <div class="hero-text-overlay">
-      <div class="hero-tagline-wrap">
-        <span class="hero-tagline-line"></span>
-        <span class="hero-tagline">AIで、あなたのステージを次のレベルへ。</span>
-      </div>
-      <p class="hero-main-copy">学び、実践し、未来を創る。<br>AI活用の実践者が集うステージ。</p>
-      <p class="hero-sub-copy">AI Stageは、AIを使って成果を出している実践者たちが<br>リアルな経験を共有するウェビナーコミュニティです。<br><br>初心者向けハンズオンから実案件の事例共有まで、<br>毎月さまざまなテーマでオンラインイベントを開催しています。</p>
-    </div>
   </div>
   <div class="hero-action-wrap">
     <div class="container">
