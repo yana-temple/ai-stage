@@ -351,24 +351,30 @@ nav{
 }
 
 /* ================================================================
-   JOIN
+   JOIN = 白
    ================================================================ */
+#join{background:#fff}
+#join .section-title{color:#111}
+#join .section-desc{color:#374151}
+#join .section-label{color:#16a34a}
 .join-grid{
   display:grid;grid-template-columns:1fr;gap:1.2rem;
 }
 .join-item{
-  background:var(--surface);border:1px solid var(--border);
+  background:#f9fafb;border:1px solid #e5e7eb;
   border-radius:var(--radius);padding:1.6rem;
   display:flex;align-items:flex-start;gap:1.2rem;
   box-shadow:var(--shadow);
 }
 .join-icon{font-size:1.8rem;flex-shrink:0;margin-top:.1rem}
-.join-item h3{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:var(--text)}
-.join-item p{font-size:.88rem;color:var(--text2);line-height:1.7}
+.join-item h3{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:#111}
+.join-item p{font-size:.88rem;color:#374151;line-height:1.7}
 
 /* ================================================================
-   HISTORY (white bg)
+   SECTION ALTERNATING BG  黒→白→黒→白...
    ================================================================ */
+/* 1: About = 黒(dark) ← デフォルトのまま */
+/* 2: History = 白 */
 #history{background:#fff}
 #history .section-title{color:#111}
 #history .section-desc{color:#374151}
@@ -381,9 +387,9 @@ nav{
 .timeline-date{color:#6b7280}
 .timeline-speaker{color:#16a34a}
 
-/* ================================================================
-   MEMBERS (white bg)
-   ================================================================ */
+/* 3: Current Event = 黒(dark) ← デフォルトのまま */
+
+/* 4: Members = 白 */
 #members{background:#fff}
 .members-grid{
   display:grid;grid-template-columns:1fr;gap:1.5rem;
@@ -465,17 +471,20 @@ nav{
 .testimonial-author{font-size:.78rem;color:var(--muted)}
 
 /* ================================================================
-   FAQ
+   FAQ = 白
    ================================================================ */
+#faq{background:#fff}
+#faq .section-title{color:#111}
+#faq .section-label{color:#16a34a}
 .faq-list{display:flex;flex-direction:column;gap:.8rem}
 .faq-item{
-  background:var(--surface);border:1px solid var(--border);
+  background:#f9fafb;border:1px solid #e5e7eb;
   border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
 }
 .faq-q{
   width:100%;display:flex;align-items:center;justify-content:space-between;
   padding:1.1rem 1.3rem;background:none;border:none;cursor:pointer;
-  color:var(--text);font-size:.92rem;font-weight:600;text-align:left;gap:1rem;
+  color:#111;font-size:.92rem;font-weight:600;text-align:left;gap:1rem;
 }
 .faq-icon{
   flex-shrink:0;width:22px;height:22px;border-radius:50%;
@@ -484,7 +493,7 @@ nav{
   border:1px solid var(--border);
 }
 .faq-item.open .faq-icon{transform:rotate(45deg)}
-.faq-a{display:none;padding:0 1.3rem 1.1rem;font-size:.88rem;color:var(--text2);line-height:1.75}
+.faq-a{display:none;padding:0 1.3rem 1.1rem;font-size:.88rem;color:#374151;line-height:1.75}
 .faq-item.open .faq-a{display:block}
 
 /* ================================================================
@@ -1187,7 +1196,7 @@ FOOTER_LINKS.forEach(l => {
   flEl.insertAdjacentHTML('beforeend', `<a href="${l.url}">${l.label}</a>`);
 });
 document.getElementById('footer-copy').textContent =
-  `© ${new Date().getFullYear()} ${SITE.name}（チーム名は仮称です）`;
+  `© ${new Date().getFullYear()} ${SITE.name}`;
 
 </script>
 </body>
