@@ -28,7 +28,6 @@
 /* ================================================================
    RESET & VARIABLES  ― ダーク（黒背景・グリーンアクセント）
    ================================================================ */
-html{font-size:18px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:       #0a0f0a;
@@ -282,7 +281,7 @@ nav{
   position:relative;
 }
 .current-event-image img{
-  width:100%;height:100%;object-fit:cover;
+  width:100%;height:100%;object-fit:contain;background:#f9fdf9;
 }
 .current-event-image-placeholder{
   display:flex;flex-direction:column;align-items:center;gap:.5rem;
@@ -341,8 +340,8 @@ nav{
 }
 .about-specialty-tag{
   display:inline-block;
-  font-size:.8rem;font-weight:600;
-  padding:.3em .9em;border-radius:99px;
+  font-size:1rem;font-weight:600;
+  padding:.35em 1em;border-radius:99px;
   background:var(--accent-xl);color:var(--accent2);
   border:1px solid var(--border2);
 }
@@ -834,7 +833,22 @@ const MEMBERS = [
     ],
     links: [],
   },
-  /* ── 3: 過去登壇者 ── */
+  /* ── 3: 次々回登壇者 ── */
+  {
+    name: "守口 晋市",
+    handle: "守口さん",
+    photo: "",
+    role: "Peatixページ作成・8月登壇予定",
+    roleBadge: { text: "登壇予定", type: "yellow" },
+    bio: "25年超・多業種のシステム構築経験を活かした「AI時短セミナー」を企画中。Peatixイベントページ作成を担当し、チームのインフラを支える。",
+    specialties: ["業務効率化", "DX推進", "システム構築"],
+    achievements: [
+      "第1回PeatixイベントページのURL作成・設定",
+      "「9割削減——その差は時短力だった」ウェビナーを企画中（8月）",
+    ],
+    links: [],
+  },
+  /* ── 4: 過去登壇者（新しい順）── */
   {
     name: "Toshihiro Katsumata",
     handle: "かっちゃん",
@@ -850,21 +864,6 @@ const MEMBERS = [
     links: [
       { label: "公式サイト", url: "https://bluecoding.jp/", primary: true },
     ],
-  },
-  /* ── 4: 次々回登壇者 ── */
-  {
-    name: "守口 晋市",
-    handle: "守口さん",
-    photo: "",
-    role: "Peatixページ作成・8月登壇予定",
-    roleBadge: { text: "登壇予定", type: "yellow" },
-    bio: "25年超・多業種のシステム構築経験を活かした「AI時短セミナー」を企画中。Peatixイベントページ作成を担当し、チームのインフラを支える。",
-    specialties: ["業務効率化", "DX推進", "システム構築"],
-    achievements: [
-      "第1回PeatixイベントページのURL作成・設定",
-      "「9割削減——その差は時短力だった」ウェビナーを企画中（8月）",
-    ],
-    links: [],
   },
   /* ── 5以降: 五十音順 ── */
   {
