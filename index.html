@@ -61,7 +61,7 @@ body{
   background:var(--bg2);
   color:var(--text);
   line-height:1.85;
-  font-size:21px;
+  font-size:18px;
   -webkit-font-smoothing:antialiased;
 }
 img{display:block;max-width:100%}
@@ -92,7 +92,7 @@ a:hover{opacity:.75}
   line-height:1.25;letter-spacing:-.02em;margin-bottom:.7rem;
   color:var(--text);
 }
-.section-desc{font-size:.95rem;color:var(--text2);max-width:560px}
+.section-desc{font-size:18px;color:var(--text2);max-width:560px}
 #about .section-desc{max-width:none;font-size:clamp(.78rem,.95rem + .1vw,1rem);}
 .section-note{font-size:.78rem;color:var(--muted);margin-top:.3rem}
 .section-header{margin-bottom:2.5rem}
@@ -222,8 +222,8 @@ nav{
   color:var(--accent);font-size:1.4rem;
 }
 .about-icon img{width:100%;height:100%;object-fit:cover}
-.about-item h3{font-size:.95rem;font-weight:700;margin-bottom:.3rem;color:var(--text)}
-.about-item p{font-size:20px;color:var(--text2);line-height:1.6}
+.about-item h3{font-size:18px;font-weight:700;margin-bottom:.3rem;color:var(--text)}
+.about-item p{font-size:18px;color:var(--text2);line-height:1.6}
 
 /* ================================================================
    TIMELINE
@@ -250,11 +250,11 @@ nav{
 .timeline-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin-bottom:.5rem}
 .timeline-date{font-size:.75rem;color:var(--muted)}
 .timeline-title{font-size:1rem;font-weight:700;margin-bottom:.4rem;line-height:1.4;color:var(--text)}
-.timeline-speaker{font-size:.82rem;color:var(--accent);margin-bottom:.5rem}
-.timeline-desc{font-size:20px;color:var(--text2);line-height:1.6}
+.timeline-speaker{font-size:18px;color:var(--accent);margin-bottom:.5rem}
+.timeline-desc{font-size:18px;color:var(--text2);line-height:1.6}
 .timeline-stats{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
-.timeline-peatix-link{display:inline-block;margin-top:.8rem;font-size:.82rem;color:var(--accent);text-decoration:none;}
-.timeline-peatix-link:hover{text-decoration:underline;}
+.timeline-peatix-link{display:inline-block;margin-top:.8rem;font-size:16px;font-weight:700;color:#15803d;background:#f0fdf4;border:1.5px solid #22c55e;border-radius:8px;padding:.45em 1.1em;text-decoration:none;transition:background .2s,color .2s;}
+.timeline-peatix-link:hover{background:#22c55e;color:#fff;}
 .stat-chip{
   font-size:.75rem;padding:.25em .75em;border-radius:99px;
   background:#dcfce7;color:#15803d;border:1px solid #bbf7d0;
@@ -298,16 +298,16 @@ nav{
   font-size:clamp(1.05rem,3.5vw,1.4rem);font-weight:800;
   line-height:1.35;margin-bottom:.7rem;color:var(--text);
 }
-.current-event-speaker{font-size:.88rem;color:var(--accent);font-weight:600;margin-bottom:.5rem}
+.current-event-speaker{font-size:18px;color:var(--accent);font-weight:600;margin-bottom:.5rem}
 .current-event-datetime{
   display:flex;align-items:center;gap:.4rem;
-  font-size:.88rem;font-weight:600;color:var(--text);margin-bottom:1rem;
+  font-size:18px;font-weight:600;color:var(--text);margin-bottom:1rem;
 }
-.current-event-desc{font-size:20px;color:var(--text2);line-height:1.75;margin-bottom:1.4rem}
+.current-event-desc{font-size:18px;color:var(--text2);line-height:1.75;margin-bottom:1.4rem}
 .current-event-highlights{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
 .highlight-item{
   display:flex;align-items:flex-start;gap:.6rem;
-  font-size:.85rem;color:var(--text2);
+  font-size:18px;color:var(--text2);
 }
 .highlight-item::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0;margin-top:.1rem}
 .current-event-cta{display:flex;flex-direction:column;gap:.8rem}
@@ -329,9 +329,9 @@ nav{
   display:flex;align-items:center;justify-content:center;
   font-weight:800;font-size:1.1rem;color:#fff;
 }
-.upcoming-name{font-weight:700;font-size:.95rem;color:var(--text)}
-.upcoming-theme{font-size:.82rem;color:var(--accent);font-weight:600;margin:.2rem 0}
-.upcoming-desc{font-size:20px;color:var(--text2)}
+.upcoming-name{font-weight:700;font-size:18px;color:var(--text)}
+.upcoming-theme{font-size:18px;color:var(--accent);font-weight:600;margin:.2rem 0}
+.upcoming-desc{font-size:18px;color:var(--text2)}
 
 /* ================================================================
    ABOUT SPECIALTIES
@@ -346,7 +346,7 @@ nav{
   background:var(--accent-xl);color:var(--accent2);
   border:1px solid var(--border2);
 }
-.about-etc{font-size:.85rem;color:var(--text2);margin-top:.4rem}
+.about-etc{font-size:18px;color:var(--text2);margin-top:.4rem}
 
 /* ================================================================
    THEMES
@@ -388,7 +388,7 @@ nav{
 }
 .join-icon{font-size:1.8rem;flex-shrink:0;margin-top:.1rem}
 .join-item h3{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:#111}
-.join-item p{font-size:20px;color:#374151;line-height:1.7}
+.join-item p{font-size:18px;color:#374151;line-height:1.7}
 
 /* ================================================================
    SECTION ALTERNATING BG  黒→白→黒→白...
@@ -437,7 +437,7 @@ nav{
 .member-name{font-weight:800;font-size:1rem;line-height:1.2;color:#111}
 .member-handle{font-size:.78rem;color:#6b7280;margin-top:.15rem}
 .member-role-badge{margin-top:.3rem}
-.member-bio{font-size:20px;color:#374151;line-height:1.7;margin-bottom:1rem}
+.member-bio{font-size:18px;color:#374151;line-height:1.7;margin-bottom:1rem}
 .member-specialties{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
 .specialty-tag{
   font-size:.72rem;background:var(--accent-xl);
@@ -451,7 +451,7 @@ nav{
 }
 .achievement-item{
   display:flex;align-items:flex-start;gap:.5rem;
-  font-size:.82rem;color:#374151;line-height:1.5;
+  font-size:18px;color:#374151;line-height:1.5;
   padding:.3rem 0;border-bottom:1px solid #e5e7eb;
 }
 .achievement-item:last-child{border-bottom:none}
@@ -503,7 +503,7 @@ nav{
 .faq-q{
   width:100%;display:flex;align-items:center;justify-content:space-between;
   padding:1.1rem 1.3rem;background:none;border:none;cursor:pointer;
-  color:var(--text);font-size:.92rem;font-weight:600;text-align:left;gap:1rem;
+  color:var(--text);font-size:18px;font-weight:600;text-align:left;gap:1rem;
 }
 .faq-icon{
   flex-shrink:0;width:22px;height:22px;border-radius:50%;
@@ -512,7 +512,7 @@ nav{
   border:1px solid var(--border);
 }
 .faq-item.open .faq-icon{transform:rotate(45deg)}
-.faq-a{display:none;padding:0 1.3rem 1.1rem;font-size:20px;color:var(--text2);line-height:1.75}
+.faq-a{display:none;padding:0 1.3rem 1.1rem;font-size:18px;color:var(--text2);line-height:1.75}
 .faq-item.open .faq-a{display:block}
 
 /* ================================================================
@@ -523,7 +523,7 @@ nav{
   text-align:center;border-top:1px solid #e5e7eb;
 }
 .final-cta-title{font-size:clamp(1.3rem,4vw,1.8rem);font-weight:800;line-height:1.3;margin-bottom:.8rem;color:#111}
-.final-cta-sub{font-size:.95rem;color:#374151;max-width:480px;margin:0 auto 2rem}
+.final-cta-sub{font-size:18px;color:#374151;max-width:480px;margin:0 auto 2rem}
 .final-cta-btns{display:flex;flex-direction:column;align-items:center;gap:.8rem}
 #final-cta .btn--outline{color:#111;border-color:#22c55e;}
 #final-cta .btn--outline:hover{background:#22c55e;color:#fff;}
@@ -625,7 +625,6 @@ footer{border-top:1px solid var(--border);padding:2rem 20px;text-align:center;fo
       <p class="section-label">Members</p>
       <h2 class="section-title">登壇・運営メンバー</h2>
       <p class="section-desc">それぞれの専門領域でAIを実践するメンバーが集まっています。</p>
-      <p class="section-note">※五十音順</p>
     </div>
     <div class="members-grid" id="members-grid"></div>
   </div>
@@ -733,7 +732,7 @@ const CURRENT_EVENT = {
   closed: false,
   no: "",
   badge: "参加受付中",
-  image: "",  /* ← PeatixトップページのサムネイルURLまたはパスをここに入れる */
+  image: "/event-gofuku.png",
   imageAlt: "第2回ウェビナー：ごふくの日LP実装事例",
   title: "ごふくの日LPで過去最高集客──AI×20時間の実装記／三代目本人登壇",
   speaker: "Hitoshi",
@@ -757,9 +756,9 @@ const PAST_EVENTS = [
     date: "2026.05",
     badge: { text: "開催済み", type: "green" },
     title: "絵が描けなくてもOK！ChatGPTで作るオリジナルLINEスタンプ",
-    speaker: "かっちゃん",
+    speaker: "Toshihiro Katsumata",
     desc: "AI初心者でも30分でオリジナルスタンプが完成するハンズオン体験会。満足度93%を達成。",
-    stats: ["参加者 25名", "満足度 93%"],
+    stats: [],
     peatixUrl: "https://peatix.com/event/5000088",
   },
   {
@@ -769,6 +768,7 @@ const PAST_EVENTS = [
     speaker: "Hitoshi",
     desc: "呉服店のLPをAIで実装し「ごふくの日」に過去最高集客を達成。三代目当主本人も登壇するリアルな対談形式。",
     stats: [],
+    peatixUrl: "https://peatix.com/event/5038871",
   },
   {
     date: "2026.07",
@@ -805,20 +805,36 @@ const UPCOMING_SPEAKERS = [
    links: { label, url, primary:true/false } の配列
 ---------------------------------------------------------------- */
 const MEMBERS = [
-  /* ── 五十音順 ── */
+  /* ── 1: 現在受付中の登壇者 ── */
   {
-    name: "新井 宗孝",
-    handle: "新井さん",
+    name: "Hitoshi",
+    handle: "Hitoshi",
     photo: "",
-    role: "登壇準備中",
-    roleBadge: { text: "登壇予定", type: "yellow" },
-    bio: "BPO事業会社に25年以上勤務し、IT・メーカー・金融領域を中心にオペレーション・営業部門の組織運営マネジメントを20年担ってきたジェネラリスト。「AIに仕事を奪われる側ではなく、使いこなす側になる」をモットーに活動中。",
-    specialties: ["BPO・業務プロセス", "組織マネジメント", "AI活用推進"],
+    role: "第2回登壇者",
+    roleBadge: { text: "登壇済", type: "green" },
+    bio: "呉服店のLPをAIで実装し「ごふくの日」に過去最高集客を達成。制作後のモニタリング・改善運用まで一貫してサポートするマーケティング視点のAI実装が得意。",
+    specialties: ["LP制作・運用", "AIコンサル", "マーケティング", "業務改善"],
     achievements: [
-      "AI活用をテーマにウェビナー登壇準備中",
+      "呉服店LPをAIで実装→ごふくの日に過去最高集客を達成",
+      "第2回Peatixウェビナー（6/25）登壇",
     ],
     links: [],
   },
+  /* ── 2: 次回登壇者 ── */
+  {
+    name: "miomiu",
+    handle: "miomiu",
+    photo: "",
+    role: "7月登壇予定",
+    roleBadge: { text: "登壇予定", type: "yellow" },
+    bio: "元PC講師として業務整理を長年手がけてきた実践者。難しいツールの話より「社長の業務から一緒に考える」スタイルで、AIが気になるけど何に使えばいいかわからない中小企業の経営者向けに7月登壇準備中。",
+    specialties: ["元PC講師", "業務整理・棚卸し", "中小企業AI活用"],
+    achievements: [
+      "その仕事、本当に社長がやる必要ありますか？7月ウェビナー登壇準備中",
+    ],
+    links: [],
+  },
+  /* ── 3: 過去登壇者 ── */
   {
     name: "Toshihiro Katsumata",
     handle: "かっちゃん",
@@ -834,6 +850,35 @@ const MEMBERS = [
     links: [
       { label: "公式サイト", url: "https://bluecoding.jp/", primary: true },
     ],
+  },
+  /* ── 4: 次々回登壇者 ── */
+  {
+    name: "守口 晋市",
+    handle: "守口さん",
+    photo: "",
+    role: "Peatixページ作成・8月登壇予定",
+    roleBadge: { text: "登壇予定", type: "yellow" },
+    bio: "25年超・多業種のシステム構築経験を活かした「AI時短セミナー」を企画中。Peatixイベントページ作成を担当し、チームのインフラを支える。",
+    specialties: ["業務効率化", "DX推進", "システム構築"],
+    achievements: [
+      "第1回PeatixイベントページのURL作成・設定",
+      "「9割削減——その差は時短力だった」ウェビナーを企画中（8月）",
+    ],
+    links: [],
+  },
+  /* ── 5以降: 五十音順 ── */
+  {
+    name: "新井 宗孝",
+    handle: "新井さん",
+    photo: "",
+    role: "登壇準備中",
+    roleBadge: { text: "登壇予定", type: "yellow" },
+    bio: "BPO事業会社に25年以上勤務し、IT・メーカー・金融領域を中心にオペレーション・営業部門の組織運営マネジメントを20年担ってきたジェネラリスト。「AIに仕事を奪われる側ではなく、使いこなす側になる」をモットーに活動中。",
+    specialties: ["BPO・業務プロセス", "組織マネジメント", "AI活用推進"],
+    achievements: [
+      "AI活用をテーマにウェビナー登壇準備中",
+    ],
+    links: [],
   },
   {
     name: "川崎 陽子",
@@ -882,33 +927,6 @@ const MEMBERS = [
     ],
   },
   {
-    name: "Hitoshi",
-    handle: "Hitoshi",
-    photo: "",
-    role: "第2回登壇者",
-    roleBadge: { text: "登壇済", type: "green" },
-    bio: "呉服店のLPをAIで実装し「ごふくの日」に過去最高集客を達成。制作後のモニタリング・改善運用まで一貫してサポートするマーケティング視点のAI実装が得意。",
-    specialties: ["LP制作・運用", "AIコンサル", "マーケティング", "業務改善"],
-    achievements: [
-      "呉服店LPをAIで実装→ごふくの日に過去最高集客を達成",
-      "第2回Peatixウェビナー（6/25）登壇",
-    ],
-    links: [],
-  },
-  {
-    name: "miomiu",
-    handle: "miomiu",
-    photo: "",
-    role: "7月登壇予定",
-    roleBadge: { text: "登壇予定", type: "yellow" },
-    bio: "元PC講師として業務整理を長年手がけてきた実践者。難しいツールの話より「社長の業務から一緒に考える」スタイルで、AIが気になるけど何に使えばいいかわからない中小企業の経営者向けに7月登壇準備中。",
-    specialties: ["元PC講師", "業務整理・棚卸し", "中小企業AI活用"],
-    achievements: [
-      "その仕事、本当に社長がやる必要ありますか？7月ウェビナー登壇準備中",
-    ],
-    links: [],
-  },
-  {
     name: "みさき",
     handle: "みさき",
     photo: "",
@@ -917,20 +935,6 @@ const MEMBERS = [
     bio: "Google Cloud Platformや環境構築にも積極的に取り組んでおり、コーディングからデプロイまで幅広く対応。",
     specialties: ["Claude Code", "Google Cloud Platform", "Webアプリ開発"],
     achievements: [],
-    links: [],
-  },
-  {
-    name: "守口 晋市",
-    handle: "守口さん",
-    photo: "",
-    role: "Peatixページ作成・8月登壇予定",
-    roleBadge: { text: "登壇予定", type: "yellow" },
-    bio: "25年超・多業種のシステム構築経験を活かした「AI時短セミナー」を企画中。Peatixイベントページ作成を担当し、チームのインフラを支える。",
-    specialties: ["業務効率化", "DX推進", "システム構築"],
-    achievements: [
-      "第1回PeatixイベントページのURL作成・設定",
-      "「9割削減——その差は時短力だった」ウェビナーを企画中（8月）",
-    ],
     links: [],
   },
   {
