@@ -92,7 +92,7 @@ a:hover{opacity:.75}
   color:var(--text);
 }
 .section-desc{font-size:18px;color:var(--text2);max-width:560px}
-#about .section-desc{max-width:none;font-size:clamp(.78rem,.95rem + .1vw,1rem);}
+#about .section-desc{max-width:none;font-size:18px;}
 .section-note{font-size:.78rem;color:var(--muted);margin-top:.3rem}
 .section-header{margin-bottom:2.5rem}
 section{padding:5rem 0}
@@ -249,8 +249,8 @@ nav{
 .timeline-meta{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin-bottom:.5rem}
 .timeline-date{font-size:.75rem;color:var(--muted)}
 .timeline-title{font-size:1rem;font-weight:700;margin-bottom:.4rem;line-height:1.4;color:var(--text)}
-.timeline-speaker{font-size:18px;color:var(--accent);margin-bottom:.5rem}
-.timeline-desc{font-size:18px;color:var(--text2);line-height:1.6}
+.timeline-speaker{font-size:16px;color:var(--accent);margin-bottom:.5rem}
+.timeline-desc{font-size:16px;color:var(--text2);line-height:1.6}
 .timeline-stats{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
 .timeline-peatix-link{display:inline-block;margin-top:.8rem;font-size:16px;font-weight:700;color:#15803d;background:#f0fdf4;border:1.5px solid #22c55e;border-radius:8px;padding:.45em 1.1em;text-decoration:none;transition:background .2s,color .2s;}
 .timeline-peatix-link:hover{background:#22c55e;color:#fff;}
@@ -302,7 +302,7 @@ nav{
   display:flex;align-items:center;gap:.4rem;
   font-size:18px;font-weight:600;color:var(--text);margin-bottom:1rem;
 }
-.current-event-desc{font-size:18px;color:var(--text2);line-height:1.75;margin-bottom:1.4rem}
+.current-event-desc{font-size:16px;color:var(--text2);line-height:1.75;margin-bottom:1.4rem}
 .current-event-highlights{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
 .highlight-item{
   display:flex;align-items:flex-start;gap:.6rem;
@@ -330,7 +330,7 @@ nav{
 }
 .upcoming-name{font-weight:700;font-size:18px;color:var(--text)}
 .upcoming-theme{font-size:18px;color:var(--accent);font-weight:600;margin:.2rem 0}
-.upcoming-desc{font-size:18px;color:var(--text2)}
+.upcoming-desc{font-size:16px;color:var(--text2)}
 
 /* ================================================================
    ABOUT SPECIALTIES
@@ -450,7 +450,7 @@ nav{
 }
 .achievement-item{
   display:flex;align-items:flex-start;gap:.5rem;
-  font-size:18px;color:#374151;line-height:1.5;
+  font-size:16px;color:#374151;line-height:1.5;
   padding:.3rem 0;border-bottom:1px solid #e5e7eb;
 }
 .achievement-item:last-child{border-bottom:none}
@@ -734,7 +734,7 @@ const CURRENT_EVENT = {
   image: "/event-gofuku.png",
   imageAlt: "第2回ウェビナー：ごふくの日LP実装事例",
   title: "ごふくの日LPで過去最高集客──AI×20時間の実装記／三代目本人登壇",
-  speaker: "Hitoshi",
+  speaker: "Hitoshi Lab",
   datetime: "2026年6月25日（木）21:00〜21:30",
   desc: "呉服店のランディングページをAIで実装し、運用まで行ったリアルなプロジェクト実践記を公開します。クライアント本人もゲストとして登壇予定。アーカイブなしのライブ限定開催です。",
   highlights: [
@@ -755,7 +755,7 @@ const PAST_EVENTS = [
     date: "2026.05",
     badge: { text: "開催済み", type: "green" },
     title: "絵が描けなくてもOK！ChatGPTで作るオリジナルLINEスタンプ",
-    speaker: "Toshihiro Katsumata",
+    speaker: "勝又稔宏",
     desc: "AI初心者でも30分でオリジナルスタンプが完成するハンズオン体験会。満足度93%を達成。",
     stats: [],
     peatixUrl: "https://peatix.com/event/5000088",
@@ -764,7 +764,7 @@ const PAST_EVENTS = [
     date: "2026.06",
     badge: { text: "受付中", type: "accent" },
     title: "ごふくの日LPで過去最高集客──AI×20時間の実装記／三代目本人登壇",
-    speaker: "Hitoshi",
+    speaker: "Hitoshi Lab",
     desc: "呉服店のLPをAIで実装し「ごふくの日」に過去最高集客を達成。三代目当主本人も登壇するリアルな対談形式。",
     stats: [],
     peatixUrl: "https://peatix.com/event/5038871",
@@ -806,18 +806,21 @@ const UPCOMING_SPEAKERS = [
 const MEMBERS = [
   /* ── 1: 現在受付中の登壇者 ── */
   {
-    name: "Hitoshi",
-    handle: "Hitoshi",
+    name: "Hitoshi Lab",
+    handle: "Hitoshi Lab",
     photo: "",
     role: "第2回登壇者",
     roleBadge: { text: "登壇済", type: "green" },
-    bio: "呉服店のLPをAIで実装し「ごふくの日」に過去最高集客を達成。制作後のモニタリング・改善運用まで一貫してサポートするマーケティング視点のAI実装が得意。",
-    specialties: ["LP制作・運用", "AIコンサル", "マーケティング", "業務改善"],
+    bio: "IT業界25年・金融基幹系出身のシニアPM/エンジニア。納期厳守とフィードバック設計、24時間以内応答を一貫して実践してきました。生成AI（Claude・Gemini・NotebookLM）を用いて「理論ではなく実クライアントの案件で動かす」ことを軸に、LP制作からAIセミナー登壇まで、作って終わりにしない伴走を信条としています。",
+    specialties: ["AXコンサルタント", "生成AI実装", "HP/LP制作", "中小企業DX支援"],
     achievements: [
-      "呉服店LPをAIで実装→ごふくの日に過去最高集客を達成",
-      "第2回Peatixウェビナー（6/25）登壇",
+      "AI Stage第2回 登壇「呉服店LP実装記 ─ AI×20時間+運用5日」(2026/6/25)",
+      "AI Stage第1回 サポート担当",
+      "AI体験会(NotebookLM)を主催・登壇 ─ 満足度4.60/5・理解度95%向上",
     ],
-    links: [],
+    links: [
+      { label: "公式サイト", url: "https://fastidious-crostata-5713f7.netlify.app/", primary: true },
+    ],
   },
   /* ── 2: 次回登壇者 ── */
   {
@@ -826,12 +829,17 @@ const MEMBERS = [
     photo: "",
     role: "7月登壇予定",
     roleBadge: { text: "登壇予定", type: "yellow" },
-    bio: "元PC講師として業務整理を長年手がけてきた実践者。難しいツールの話より「社長の業務から一緒に考える」スタイルで、AIが気になるけど何に使えばいいかわからない中小企業の経営者向けに7月登壇準備中。",
-    specialties: ["元PC講師", "業務整理・棚卸し", "中小企業AI活用"],
+    bio: "IT担当者がいない中小企業の「社外AI担当」として、業務整理からAI活用の定着までを支援しています。ITサポート・PC講師の経験を活かし、ツール導入ありきではなく、まず業務を整理してから。事務作業に追われる時間を減らし、経営者が本業に集中できる環境づくりを伴走します。「AIに興味はあるけれど、何から始めればいいか分からない」そんな方の最初の一歩を一緒に整理します。",
+    specialties: ["中小企業支援", "業務整理", "社外AI担当", "AI導入支援", "事務効率化", "ITサポート", "PC講師"],
     achievements: [
-      "その仕事、本当に社長がやる必要ありますか？7月ウェビナー登壇準備中",
+      "2026年7月 Peatix登壇予定「その仕事、本当に社長がやる必要ありますか？」",
+      "ソフトバンク主催ハッカソン 第3位入賞",
+      "ITサポート・PC講師として、初心者向けのPC操作・業務効率化をサポート",
+      "IT担当者がいない中小企業向けに、業務整理から始めるAI活用支援を実施",
     ],
-    links: [],
+    links: [
+      { label: "公式サイト", url: "https://node-ai.jp", primary: true },
+    ],
   },
   /* ── 3: 次々回登壇者 ── */
   {
@@ -850,16 +858,16 @@ const MEMBERS = [
   },
   /* ── 4: 過去登壇者（新しい順）── */
   {
-    name: "Toshihiro Katsumata",
+    name: "勝又稔宏",
     handle: "かっちゃん",
     photo: "",
     role: "第1回登壇者",
     roleBadge: { text: "登壇済", type: "green" },
-    bio: "Blue Coding主宰。AIで絵が描けなくてもオリジナルLINEスタンプを作る体験会を開催し、満足度93%を達成。自治体向け子ども向けアプリ作成教室も実施。",
-    specialties: ["AI画像生成", "LINEスタンプ制作", "AIクリエイティブ", "中小企業支援"],
+    bio: "AIでマンガやLINEスタンプ作成を行なっています！",
+    specialties: ["マンガ作成", "LINEスタンプ作成"],
     achievements: [
-      "第1回Peatixウェビナー登壇（参加者25名・満足度93%）",
-      "自治体主催・子ども向けアプリ作成教室を実施",
+      "第1回ウェビナー（LINEスタンプ作成）で登壇",
+      "地元自治体で子ども向けアプリ作成セミナー開催",
     ],
     links: [
       { label: "公式サイト", url: "https://bluecoding.jp/", primary: true },
@@ -908,21 +916,18 @@ const MEMBERS = [
     links: [],
   },
   {
-    name: "清水 秀明",
+    name: "ひっきー",
     handle: "ひっきー",
     photo: "",
     role: "ファシリテーター・MTG進行",
     roleBadge: { text: "運営", type: "accent" },
-    bio: "早稲田大学理工学部卒業。放送局技術職として働きながら、ライターやアプリ開発などを行う。MTGのファシリテートと議事録を担う縁の下の力持ち。",
-    specialties: ["モビリティライティング", "Google Workspace AI", "GASアプリ開発", "韓国語"],
+    bio: "放送局の技術職正社員として30年以上の勤務を経て、セカンドキャリアのためにAI活用を始めました。ライティングからスタートして、オフライン講習会のサポート講師、オンライン講習会の講師など実績を積み上げ、今は企業のDX化を生成AIを活用して支援しています。",
+    specialties: ["AI活用業務効率化", "SEOライティング", "企業AI活用支援"],
     achievements: [
-      "全ミーティングのファシリテート・議事録作成",
-      "モビリティライターとして自動車・交通インフラ分野の記事を執筆（merkmal-biz.jp）",
-      "韓国語学習サイト KOREACT に記事執筆",
-      "居住支援法人向けタイムコードWebアプリをGASで開発・提供",
+      "当コミュニティでのファシリテーター",
     ],
     links: [
-      { label: "執筆記事を見る", url: "https://merkmal-biz.jp/post/writer/hideaki-shimizu", primary: true },
+      { label: "X（Twitter）", url: "https://x.com/hickey_9999", primary: true },
     ],
   },
   {
@@ -931,9 +936,12 @@ const MEMBERS = [
     photo: "",
     role: "メンバー",
     roleBadge: { text: "運営", type: "accent" },
-    bio: "Google Cloud Platformや環境構築にも積極的に取り組んでおり、コーディングからデプロイまで幅広く対応。",
-    specialties: ["Claude Code", "Google Cloud Platform", "Webアプリ開発"],
-    achievements: [],
+    bio: "富山を拠点に個人事業主向けのAI業務改善・コンサルとして活動中。「地方で働く人が雑務から解放され、やりたいことに集中できる」をビジョンに、美容室など小規模事業者の業務効率化を支援しています。",
+    specialties: ["AIコンサル", "業務効率化", "個人事業主支援"],
+    achievements: [
+      "AI初心者向け作業会を主催・開催",
+      "美容室クライアントの業務改善を支援中",
+    ],
     links: [],
   },
   {
